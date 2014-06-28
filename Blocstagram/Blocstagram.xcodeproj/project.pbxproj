@@ -35,6 +35,7 @@
 		17186CED195796FD005E9EC9 /* BLCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 17186CEC195796FD005E9EC9 /* BLCComment.m */; };
 		17186CF019579799005E9EC9 /* BLCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 17186CEF19579799005E9EC9 /* BLCDataSource.m */; };
 		939AD9141958CF4600ED850F /* BLCMediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 939AD9131958CF4600ED850F /* BLCMediaTableViewCell.m */; };
+		939AD917195CB39F00ED850F /* BLCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939AD916195CB39F00ED850F /* BLCLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		17186CEF19579799005E9EC9 /* BLCDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCDataSource.m; sourceTree = "<group>"; };
 		939AD9121958CF4600ED850F /* BLCMediaTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCMediaTableViewCell.h; sourceTree = "<group>"; };
 		939AD9131958CF4600ED850F /* BLCMediaTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCMediaTableViewCell.m; sourceTree = "<group>"; };
+		939AD915195CB39F00ED850F /* BLCLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCLoginViewController.h; sourceTree = "<group>"; };
+		939AD916195CB39F00ED850F /* BLCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 				17186CEF19579799005E9EC9 /* BLCDataSource.m */,
 				17186CCD19578173005E9EC9 /* BLCImagesTableViewController.h */,
 				17186CCE19578173005E9EC9 /* BLCImagesTableViewController.m */,
+				939AD915195CB39F00ED850F /* BLCLoginViewController.h */,
+				939AD916195CB39F00ED850F /* BLCLoginViewController.m */,
 				17186CE8195796A4005E9EC9 /* BLCMedia.h */,
 				17186CE9195796A4005E9EC9 /* BLCMedia.m */,
 				939AD9121958CF4600ED850F /* BLCMediaTableViewCell.h */,
@@ -326,6 +331,7 @@
 				17186CED195796FD005E9EC9 /* BLCComment.m in Sources */,
 				939AD9141958CF4600ED850F /* BLCMediaTableViewCell.m in Sources */,
 				17186CF019579799005E9EC9 /* BLCDataSource.m in Sources */,
+				939AD917195CB39F00ED850F /* BLCLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
