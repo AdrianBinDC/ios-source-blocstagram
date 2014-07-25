@@ -35,6 +35,7 @@
 		17186CED195796FD005E9EC9 /* BLCComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 17186CEC195796FD005E9EC9 /* BLCComment.m */; };
 		17186CF019579799005E9EC9 /* BLCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 17186CEF19579799005E9EC9 /* BLCDataSource.m */; };
 		8EFB7A8A38294BABB169724F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FADE57CB7F4B4FC6B5B3E5CF /* libPods.a */; };
+		930244771981893600427659 /* BLCComposeCommentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 930244761981893600427659 /* BLCComposeCommentView.m */; };
 		930B40AA197C7FD30011A5D8 /* BLCLikeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 930B40A9197C7FD30011A5D8 /* BLCLikeButton.m */; };
 		930B40B1197D78A10011A5D8 /* BLCCircleSpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 930B40B0197D78A10011A5D8 /* BLCCircleSpinnerView.m */; };
 		938092E8197433D500125A02 /* BLCMediaFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 938092E7197433D500125A02 /* BLCMediaFullScreenViewController.m */; };
@@ -90,6 +91,8 @@
 		17186CEC195796FD005E9EC9 /* BLCComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCComment.m; sourceTree = "<group>"; };
 		17186CEE19579799005E9EC9 /* BLCDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCDataSource.h; sourceTree = "<group>"; };
 		17186CEF19579799005E9EC9 /* BLCDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCDataSource.m; sourceTree = "<group>"; };
+		930244751981893600427659 /* BLCComposeCommentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCComposeCommentView.h; sourceTree = "<group>"; };
+		930244761981893600427659 /* BLCComposeCommentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCComposeCommentView.m; sourceTree = "<group>"; };
 		930B40A8197C7FD30011A5D8 /* BLCLikeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCLikeButton.h; sourceTree = "<group>"; };
 		930B40A9197C7FD30011A5D8 /* BLCLikeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCLikeButton.m; sourceTree = "<group>"; };
 		930B40AF197D78A10011A5D8 /* BLCCircleSpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCCircleSpinnerView.h; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 				930B40B0197D78A10011A5D8 /* BLCCircleSpinnerView.m */,
 				17186CEB195796FD005E9EC9 /* BLCComment.h */,
 				17186CEC195796FD005E9EC9 /* BLCComment.m */,
+				930244751981893600427659 /* BLCComposeCommentView.h */,
+				930244761981893600427659 /* BLCComposeCommentView.m */,
 				17186CEE19579799005E9EC9 /* BLCDataSource.h */,
 				17186CEF19579799005E9EC9 /* BLCDataSource.m */,
 				17186CCD19578173005E9EC9 /* BLCImagesTableViewController.h */,
@@ -397,6 +402,7 @@
 				17186CF019579799005E9EC9 /* BLCDataSource.m in Sources */,
 				930B40B1197D78A10011A5D8 /* BLCCircleSpinnerView.m in Sources */,
 				939AD917195CB39F00ED850F /* BLCLoginViewController.m in Sources */,
+				930244771981893600427659 /* BLCComposeCommentView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
