@@ -145,7 +145,7 @@
         self.isRefreshing = YES;
 
         NSString *minID = [[self.mediaItems firstObject] idNumber];
-        NSDictionary *parameters = @{@"min_id": minID};
+        NSDictionary *parameters = minID ? @{@"min_id": minID} : nil;
         
         [self populateDataWithParameters:parameters completionHandler:^(NSError *error) {
             self.isRefreshing = NO;
@@ -193,6 +193,8 @@
                                    }
                                }
                          } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                             [self invalidateAccessTokenIf400:operation];
+                             
                              if (completionHandler) {
                                  completionHandler(error);
                              }
@@ -371,6 +373,15 @@
         NSLog(@"Response: %@", operation.responseString);
         [self reloadMediaItem:mediaItem];
     }];
+}
+
+#pragma mark - Authentication
+
+- (void) invalidateAccessTokenIf400:(AFHTTPRequestOperation *)operation {
+    if (operation.response.statusCode == 400) {
+        self.accessToken = nil;
+        [UICKeyChainStore setString:self.accessToken forKey:@"access token"];
+    }
 }
 
 @end
