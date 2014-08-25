@@ -7,6 +7,7 @@
 //
 
 #import "BLCPostToInstagramViewController.h"
+#import "BLCDataSource.h"
 
 @interface BLCPostToInstagramViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UIAlertViewDelegate, UIDocumentInteractionControllerDelegate>
 
@@ -21,6 +22,8 @@
 
 @property (nonatomic, strong) UIButton *sendButton;
 @property (nonatomic, strong) UIBarButtonItem *sendBarButton;
+
+@property (nonatomic, strong) UIDocumentInteractionController *documentController;
 
 @end
 
@@ -131,7 +134,7 @@
     NSURL *instagramURL = [NSURL URLWithString:@"instagram://location?id=1"];
     
     if ([[UIApplication sharedApplication] canOpenURL:instagramURL]) {
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"LOL" message:NSLocalizedString(@"Add a caption and send your image in the Instagram app.", @"send image instructions") delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"cancel button") otherButtonTitles:NSLocalizedString(@"Send", @"Send button"), nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:NSLocalizedString(@"Add a caption and send your image in the Instagram app.", @"send image instructions") delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"cancel button") otherButtonTitles:NSLocalizedString(@"Send", @"Send button"), nil];
         alert.alertViewStyle = UIAlertViewStylePlainTextInput;
         
         UITextField *textField = [alert textFieldAtIndex:0];
@@ -162,21 +165,21 @@
             return;
         }
         
-        UIDocumentInteractionController *documentController = [UIDocumentInteractionController interactionControllerWithURL:fileURL];
-        documentController.UTI = @"com.instagram.exclusivegram";
+        self.documentController = [UIDocumentInteractionController interactionControllerWithURL:fileURL];
+        self.documentController.UTI = @"com.instagram.exclusivegram";
         
-        documentController.delegate = self;
+        self.documentController.delegate = self;
         
         NSString *caption = [alertView textFieldAtIndex:0].text;
         
         if (caption.length > 0) {
-            documentController.annotation = @{@"InstagramCaption": caption};
+            self.documentController.annotation = @{@"InstagramCaption": caption};
         }
         
         if (self.sendButton.superview) {
-            [documentController presentOpenInMenuFromRect:self.sendButton.bounds inView:self.sendButton animated:YES];
+            [self.documentController presentOpenInMenuFromRect:self.sendButton.bounds inView:self.sendButton animated:YES];
         } else {
-            [documentController presentOpenInMenuFromBarButtonItem:self.sendBarButton animated:YES];
+            [self.documentController presentOpenInMenuFromBarButtonItem:self.sendBarButton animated:YES];
         }
     }
 }
@@ -184,7 +187,7 @@
 #pragma mark - UIDocumentInteractionControllerDelegate
 
 - (void)documentInteractionController:(UIDocumentInteractionController *)controller didEndSendingToApplication:(NSString *)application {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:BLCImageFinishedNotification object:self];
 }
 
 #pragma mark - Photo Filters
