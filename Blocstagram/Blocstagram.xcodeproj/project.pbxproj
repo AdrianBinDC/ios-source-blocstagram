@@ -46,6 +46,8 @@
 		939AD9141958CF4600ED850F /* BLCMediaTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 939AD9131958CF4600ED850F /* BLCMediaTableViewCell.m */; };
 		939AD917195CB39F00ED850F /* BLCLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 939AD916195CB39F00ED850F /* BLCLoginViewController.m */; };
 		93CC8975198EC67100414363 /* BLCCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CC8974198EC67100414363 /* BLCCameraViewController.m */; };
+		93ED5F0319AD05570060C1C1 /* BLCUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ED5F0219AD05570060C1C1 /* BLCUserTests.m */; };
+		93ED5F0719AD265F0060C1C1 /* BLCCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93ED5F0619AD265F0060C1C1 /* BLCCommentTests.m */; };
 		93F9799A19994C9E00894056 /* BLCImageLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F9799919994C9E00894056 /* BLCImageLibraryViewController.m */; };
 		93F9799D199AA6A600894056 /* BLCCropBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F9799C199AA6A600894056 /* BLCCropBox.m */; };
 		93F979A0199AB62B00894056 /* BLCCropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F9799F199AB62B00894056 /* BLCCropImageViewController.m */; };
@@ -120,6 +122,8 @@
 		939AD916195CB39F00ED850F /* BLCLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCLoginViewController.m; sourceTree = "<group>"; };
 		93CC8973198EC67100414363 /* BLCCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCCameraViewController.h; sourceTree = "<group>"; };
 		93CC8974198EC67100414363 /* BLCCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCCameraViewController.m; sourceTree = "<group>"; };
+		93ED5F0219AD05570060C1C1 /* BLCUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCUserTests.m; sourceTree = "<group>"; };
+		93ED5F0619AD265F0060C1C1 /* BLCCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCCommentTests.m; sourceTree = "<group>"; };
 		93F9799819994C9E00894056 /* BLCImageLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCImageLibraryViewController.h; sourceTree = "<group>"; };
 		93F9799919994C9E00894056 /* BLCImageLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCImageLibraryViewController.m; sourceTree = "<group>"; };
 		93F9799B199AA6A600894056 /* BLCCropBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCCropBox.h; sourceTree = "<group>"; };
@@ -255,8 +259,10 @@
 		17186CBD19577859005E9EC9 /* BlocstagramTests */ = {
 			isa = PBXGroup;
 			children = (
+				93ED5F0219AD05570060C1C1 /* BLCUserTests.m */,
 				17186CC319577859005E9EC9 /* BlocstagramTests.m */,
 				17186CBE19577859005E9EC9 /* Supporting Files */,
+				93ED5F0619AD265F0060C1C1 /* BLCCommentTests.m */,
 			);
 			path = BlocstagramTests;
 			sourceTree = "<group>";
@@ -459,7 +465,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93ED5F0319AD05570060C1C1 /* BLCUserTests.m in Sources */,
 				17186CC419577859005E9EC9 /* BlocstagramTests.m in Sources */,
+				93ED5F0719AD265F0060C1C1 /* BLCCommentTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
